@@ -1,0 +1,110 @@
+.cssFonts {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 33px; /* 1px = 1/96inch */
+    font-weight: bold;
+    font-style: normal;
+    font-variant: small-caps;
+    line-height: 1.3em;
+}
+
+.cssColors {
+    color: red;
+    background-color: blueviolet;
+}
+
+.bordersAndBackgrounds {
+    background-color: red;
+    height: 30px;
+    width: 50px;
+    border-width: 4px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 3px;
+
+    /* border: 4px solid green */
+
+    border-top: 2px solid orange;
+    border-right: 2px solid rgb(35, 148, 163);
+    border-left: 2px solid rgb(54, 129, 18);
+    border-bottom: 2px solid rgb(112, 99, 76);
+
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.image {
+    height: 500px;
+    width: 100px;
+    background-image: none;
+    border: 10px solid rgb(142, 88, 196);
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-position: center center;
+    /* background-position: top center; */
+    /* background-position: bottom right; */
+}
+
+.padding {
+    /* padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 60px; */
+
+    padding: 30px 40px 50px 60px; /* top right bottom left */
+}
+
+.margin {
+    /* margin-top: 30px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    margin-left: 60px; */
+
+    margin: 30px 40px 50px 60px; /* top right bottom left */
+
+    /* margin: auto;   :- It will be horizontally centered because it has margin: auto; */
+}
+
+* {
+    box-sizing: border-box;  /* This causes the element to maintain its width; if you 
+    increase the padding, the available content space will decrease. */
+}
+
+.floatAndClear {
+    /* The float property is used for positioning and formatting content 
+    e.g. let an image float left to the text in a container. */
+    float: left;
+    float: right;
+    float: none;
+
+    /* The clear property specifies what elements can float beside the cleared element
+     and on which side. */
+    clear: left;
+    clear: right;
+    clear: both;
+
+    /* If an element is taller than the element containing it, and it is floated, 
+    it will "overflow" outside of its container */
+    overflow: auto;
+}
+
+/* a is link */
+.a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    color: rgb(116, 72, 14);
+}
+
+a:visited {
+    background-color: red;
+}
+
+a:active{
+    background-color: yellow;
+}
