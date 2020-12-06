@@ -15,3 +15,11 @@ console.log(user.indexOf(50));
 
 
 console.log(Array.from("Subham"));
+
+
+
+// var names = Array("Subham", "Tarun", "Rishav", "Sourav");
+
+// names.forEach((index) => {      // forEach is not counted as loop
+//     console.log(index + "wa");
+// });
