@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        // Javascript implementation of the approach
+        
+        // Function to return the count
+        // of required numbers
+        function countNumbers(l, r)
+        {
+            let count = 0;
+        
+            for (let i = l; i <= r; i++) {
+                // If rightmost bit is 0
+                if ((i & 1) == 0) {
+                    count++;
+                }
+            }
+            // Return the required count
+            return count;
+        }
+        
+        // Driver code
+            let l = 10, r = 20;
+        
+            // Call function countNumbers
+            document.write(countNumbers(l, r));
+        
+        </script>
+</body>
+</html>
