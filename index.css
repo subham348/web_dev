@@ -124,6 +124,140 @@ a:active{
     position: sticky;
 }
 
+.visibilityAnd_z-index {
+    visibility: hidden; /* will hide the element but will show its empty space */
+
+    display: none; /* will hide the element and the space */
+
+    z-index: -1; /* will work only for position: relative, absolute, fixed, or sticky */
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+
+    flex-wrap: nowrap; /* default */
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+
+    /* The flex-flow property is a shorthand property for setting both the flex-direction and flex-wrap properties */
+    flex-flow: row wrap;
+
+    /* Horizontally aligns the flex items when the items do not use all available space on the main-axis */
+    justify-content: center;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* Vertically aligns the flex items when the items do not use all available space on the cross-axis */
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+
+    /* Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning
+     flex items, it aligns flex lines */
+    align-content: center; /* I find difficulty understanding align content */
+}
+
+.flex-container div {
+    /* The order property can change the order of the flex items */
+    order: 2;
+
+    /* The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items */
+    /* The value must be a number, default value is 0. */
+    flex-grow: 2;
+
+    /* The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items */
+    /* The value must be a number, default value is 1. */
+    flex-shrink: 2;
+
+    /* when flex-direction: is set to row then flex-basis: will control width */
+    /* when flex-direction: is set to column then flex-basis: will control height */
+    /* The flex-basis property specifies the initial length of a flex item */
+    flex-basis: 20px;
+
+    /* The flex property is a shorthand property for the flex-grow, flex-shrink, and flex-basis properties */
+    flex: 0 0 200px;
+
+    /* Specifies the alignment for a flex item (overrides the flex container's align-items property) */
+    align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+}
+
+/* More on CSS selectors */
+div > p {
+    background-color: cyan;
+}
+
+div + p {
+    background-color: aliceblue;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid red;
+}
+
+a[target] {
+    color:rgb(35, 148, 163)
+}
+
+a[target="_blank"]{
+    color: aliceblue;
+}
+
+li:nth-child(2n + 0) {
+    background-color: aqua;
+}
+
+li:nth-child(odd) {
+    background-color: red;
+}
+
+li:nth-child(even) {
+    background-color: green;
+}
+
+header::before {
+    background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+header::after {
+    content: "This is extra para";
+    color: brown;
+}
+/* That's all for CSS selectors */
+
+.box_shadowAndtext_shadow {
+    box-shadow: 3px 5px green;
+    /* offset-x offset-y blur-radius spread-radius color  */
+    box-shadow: 3px 5px 6px 6px green;
+    box-shadow: -3px -5px 3px 3px green;
+
+    box-shadow: inset 2px 3px 2px 2px green; /* inside the box */
+    box-shadow: 3px 5px green, 5px 10px red; /* mixing multiple shadows */
+
+    text-shadow: 2px 3px white;
+    text-shadow: 2px 3px 3px white;
+}
+
+
 
 
 
