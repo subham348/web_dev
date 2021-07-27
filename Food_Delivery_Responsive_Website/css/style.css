@@ -5,11 +5,17 @@
     font-family: 'Mulish', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Navigation Bar */
 #navbar {
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 
 #navbar::before {
@@ -114,14 +120,13 @@
 }
 
 #services .box img {
-    height: 160px;
+    height: 130px;
     display: block;
     margin: auto;
 }
 
 /* Clients Section  */
 #client-section {
-    height: 344px;
     position: relative;
 }
 
